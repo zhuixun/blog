@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE urlrewrite PUBLIC "-//tuckey.org//DTD UrlRewrite 4.0//EN"
+        "http://www.tuckey.org/res/dtds/urlrewrite4.0.dtd">
+
+<!--
+    Configuration file for UrlRewriteFilter
+    http://www.tuckey.org/urlrewrite/
+-->
+<urlrewrite>
+    <!-- 首页 -->
+    <rule>
+        <note>首页</note>
+        <from>^/index.html</from>
+        <to>/index.do</to>
+    </rule>
+    <!-- 分页 -->
+    <rule>
+        <note>分页</note>
+        <from>^/index.html?page=([a-zA-Z0-9 ]+)</from>
+        <to>/index.do?page=$1</to>
+    </rule>
+    <!-- 栏目 -->
+    <rule>
+        <note>hadoop栏目模块</note>
+        <from>^/category/hadoop/</from>
+        <to>/article/type/list.do?typeid=1</to>
+    </rule>
+    <rule>
+        <note>Java栏目模块</note>
+        <from>^/category/Java/</from>
+        <to>/article/type/list.do?typeid=2</to>
+    </rule>
+    <rule>
+        <note>spark栏目模块</note>
+        <from>^/category/spark/</from>
+        <to>/article/type/list.do?typeid=3</to>
+    </rule>
+    <rule>
+        <note>scala栏目模块</note>
+        <from>^/category/scala/</from>
+        <to>/article/type/list.do?typeid=4</to>
+    </rule>
+    <rule>
+        <note>python栏目模块</note>
+        <from>^/category/python/</from>
+        <to>/article/type/list.do?typeid=5</to>
+    </rule>
+	 <rule>
+        <note>linux栏目模块</note>
+        <from>^/category/linux/</from>
+        <to>/article/type/list.do?typeid=6</to>
+    </rule>
+</urlrewrite>

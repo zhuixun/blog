@@ -1,0 +1,13 @@
+eclipse.preferences.version=1
+encoding//WebRoot/WEB-INF/page/article.jsp=UTF-8
+encoding//WebRoot/WEB-INF/page/index.jsp=UTF-8
+encoding//WebRoot/WEB-INF/page/share/footer.jsp=UTF-8
+encoding//WebRoot/WEB-INF/page/share/head.jsp=UTF-8
+encoding//WebRoot/css/controlcenter/base.css=UTF-8
+encoding//WebRoot/css/controlcenter/button.css=UTF-8
+encoding//WebRoot/js/controlcenter/jqgrid/js/i18n/grid.locale-bg1251.js=UTF-8
+encoding//WebRoot/js/controlcenter/ueditor=UTF-8
+encoding//src/com/blog/bean/user/Gender.java=UTF-8
+encoding//src/com/blog/listener/InitialListener.java=UTF-8
+encoding/<project>=UTF-8
+encoding/src=UTF-8
