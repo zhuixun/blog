@@ -50,64 +50,10 @@
     });
 
   </script>
-
-	<script type="text/javascript">
-
-		 <!--
-
-		 	function getClassifyList(){
-
-				var classifyList = document.getElementById('classifyList');		
-
-				if(classifyList){
-
-					classifyList.innerHTML= "数据正在加载...";
-
-					send_request(function(value){classifyList.innerHTML=value},
-
-							 "/article/switch.do?method=classifyList", true);
-
-				}
-
-			}
-
-			
-
-        	function getArticleList(){
-
-				var newestArticle = document.getElementById('newestArticle');		
-
-				if(newestArticle){
-
-					newestArticle.innerHTML= "数据正在加载...";
-
-					send_request(function(value){newestArticle.innerHTML=value},
-
-							 "/article/switch.do?method=newestArticle", true);
-
-				}
-
-			}
-
-			
-
-			function pageInit(){
-
-				getArticleList();
-
-				getClassifyList();
-
-			}
-
-         //-->
-
-	</script>
-
 </head>
 
 
-
-<body onLoad="javascript:pageInit()">
+<body>
 
 <!-- nav -->
 
@@ -121,7 +67,7 @@
 
 		<!-- content -->
 
-		<div class="span9">
+		<div class="span12">
 
 			<div class="well well-large blog-content">
 

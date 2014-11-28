@@ -26,41 +26,16 @@
 		SyntaxHighlighter.all();
 	});
 	</script>
-	<script type="text/javascript">
-
-
-		 <!--
-		 	function getClassifyList(){
-				var classifyList = document.getElementById('classifyList');		
-				if(classifyList){
-					classifyList.innerHTML= "数据正在加载...";
-					send_request(function(value){classifyList.innerHTML=value},
-							 "/article/switch.do?method=classifyList", true);
-				}
-			}
-        	function getArticleList(){
-				var newestArticle = document.getElementById('newestArticle');		
-				if(newestArticle){
-					newestArticle.innerHTML= "数据正在加载...";
-					send_request(function(value){newestArticle.innerHTML=value},
-							 "/article/switch.do?method=newestArticle", true);
-				}
-			}
-			function pageInit(){
-				getArticleList();
-				getClassifyList();
-			}
-         //-->
-	</script>
+	
 </head>
-<body onLoad="javascript:pageInit()">
+<body>
 <!-- nav -->
 <!--#include virtual="/WEB-INF/page/share/head.jsp" -->
 <!-- body -->
 <div class="container">
 	<div class="row-fluid">
 		<!-- content -->
-		<div class="span9">
+		<div class="span12">
 			<div class="well well-large blog-content">
 				<div class="title-box">
 				<ul class="date-b">
@@ -515,25 +490,6 @@ hive&gt;&nbsp;select&nbsp;*&nbsp;from&nbsp;kj&nbsp;where&nbsp;visit=&#39;2014050
 				<div class="ds-thread" data-thread-key="5" data-title="Hive安装和使用实践|小倪的博客" data-url="/html/article/1/5.shtml"></div>
 				<!-- 多说评论框 end -->
 			</div>
-		</div>
-		<!-- Sidebar content -->
-		<div class="span3">
-			<!-- 日志分类 -->
-			<div class="article-classify">
-				<h3 class="classify-title">文章分类</h3>
-				<ul class="classify-list pull-left" id="classifyList">
-				</ul>
-			</div>
-			<!-- 最新文章 -->
-			<div class="new-article">
-				<h3 class="classify-title">最新文章</h3>
-				<ul class="article-list pull-left" id="newestArticle">
-				</ul>
-			</div>
-
-
-			<!-- 友情链接 -->
-			<!--#include  virtual="/WEB-INF/page/share/links.jsp" -->
 		</div>
 	</div>
 </div>
